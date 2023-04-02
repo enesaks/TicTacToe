@@ -1,18 +1,132 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="72dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:orientation="horizontal">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/textX"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="X"
+            android:textSize="50dp" />
+
+        <TextView
+            android:id="@+id/textO"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="O"
+            android:textSize="50dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/textXskor"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="Skor :"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/textOskor"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="Skor :"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="312dp"
+        android:layout_height="312dp"
+        android:layout_margin="60dp">
+
+
+        <Button
+            android:id="@+id/b11"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="2dp"
+            app:backgroundTint="#635F5F" />
+
+        <Button
+            android:id="@+id/b12"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="2dp"
+            app:backgroundTint="#635F5F" />
+
+        <Button
+            android:id="@+id/b13"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="2dp"
+            app:backgroundTint="#635F5F" />
+
+        <Button
+            android:id="@+id/b21"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="2dp"
+            app:backgroundTint="#635F5F"
+            app:layout_column="0"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/b22"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="2dp"
+            app:backgroundTint="#635F5F" />
+
+        <Button
+            android:id="@+id/b23"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="2dp"
+            app:backgroundTint="#635F5F" />
+
+        <Button
+            android:id="@+id/b31"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="2dp"
+            app:backgroundTint="#635F5F"
+            app:layout_column="0"
+            app:layout_row="2" />
+
+        <Button
+            android:id="@+id/b32"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="2dp"
+            app:backgroundTint="#635F5F" />
+
+        <Button
+            android:id="@+id/b33"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="2dp"
+
+            app:backgroundTint="#635F5F" />
+    </androidx.gridlayout.widget.GridLayout>
+
+</LinearLayout>
