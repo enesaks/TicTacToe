@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
         return 0;
     }
 
-    private void winSkor(int a){//winer side plas the scor
+    private void winSkor(int a){//winer side plus the scor
         if (a == 1){
             x_skor++;
             textXskor.setText("skor : "+x_skor);
