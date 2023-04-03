@@ -28,10 +28,10 @@
 
         <TextView
             android:id="@+id/textO"
+            android:background="@color/black"
             android:layout_width="100dp"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:background="@color/black"
             android:textColor="@color/white"
             android:onClick="textO"
             android:text="O"
@@ -49,21 +49,36 @@
             android:id="@+id/textXskor"
             android:layout_width="100dp"
             android:layout_height="match_parent"
-            android:text="Skor :"
+            android:text="Skor : 0"
             android:textSize="15dp" />
 
         <TextView
             android:id="@+id/textOskor"
             android:layout_width="100dp"
             android:layout_height="match_parent"
-            android:text="Skor :"
+            android:text="Skor : 0"
             android:textSize="15dp" />
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/winner"
+        android:layout_width="306dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text=""
+
+        android:textColor="#C14040"
+        android:textSize="50dp" />
 
     <androidx.gridlayout.widget.GridLayout
         android:layout_width="312dp"
         android:layout_height="312dp"
-        android:layout_margin="60dp">
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        >
 
 
         <Button
@@ -72,7 +87,11 @@
             android:layout_height="100dp"
             android:layout_margin="2dp"
             android:onClick="b11"
+
             android:text=" "
+            android:textColor="#FFFFFF"
+
+            android:textSize="50sp"
             app:backgroundTint="#635F5F" />
 
         <Button
@@ -82,6 +101,8 @@
             android:layout_margin="2dp"
             android:onClick="b12"
             android:text=" "
+            android:textColor="#FFFFFF"
+            android:textSize="50sp"
             app:backgroundTint="#635F5F" />
 
         <Button
@@ -89,18 +110,22 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_margin="2dp"
-            app:backgroundTint="#635F5F"
+            android:onClick="b13"
             android:text=" "
-            android:onClick="b13"/>
+            android:textColor="#FFFFFF"
+            android:textSize="50sp"
+            app:backgroundTint="#635F5F" />
 
         <Button
             android:id="@+id/b21"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_margin="2dp"
-            android:text=" "
-            app:backgroundTint="#635F5F"
             android:onClick="b21"
+            android:text=" "
+            android:textColor="#FFFFFF"
+            android:textSize="50sp"
+            app:backgroundTint="#635F5F"
             app:layout_column="0"
             app:layout_row="1" />
 
@@ -108,8 +133,11 @@
             android:id="@+id/b22"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:onClick="b22"
             android:layout_margin="2dp"
+            android:onClick="b22"
+            android:text=" "
+            android:textColor="#FFFFFF"
+            android:textSize="50sp"
             app:backgroundTint="#635F5F" />
 
         <Button
@@ -117,8 +145,10 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_margin="2dp"
-            android:text=" "
             android:onClick="b23"
+            android:text=" "
+            android:textColor="#FFFFFF"
+            android:textSize="50sp"
             app:backgroundTint="#635F5F" />
 
         <Button
@@ -126,9 +156,11 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_margin="2dp"
-            app:backgroundTint="#635F5F"
             android:onClick="b31"
             android:text=" "
+            android:textColor="#FFFFFF"
+            android:textSize="50sp"
+            app:backgroundTint="#635F5F"
             app:layout_column="0"
             app:layout_row="2" />
 
@@ -136,19 +168,36 @@
             android:id="@+id/b32"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:text=" "
-            android:onClick="b32"
             android:layout_margin="2dp"
+            android:onClick="b32"
+            android:text=" "
+            android:textColor="#FFFFFF"
+            android:textSize="50sp"
             app:backgroundTint="#635F5F" />
 
         <Button
             android:id="@+id/b33"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:onClick="b33"
             android:layout_margin="2dp"
+            android:onClick="b33"
             android:text=" "
+            android:textColor="#FFFFFF"
+            android:textSize="50sp"
             app:backgroundTint="#635F5F" />
     </androidx.gridlayout.widget.GridLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/refresh"
+        android:layout_width="66dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#635F5F"
+        android:onClick="refresh"
+        android:topLeftRadius="100dp"
+        app:navigationIcon="@drawable/baseline_refresh_24">
+
+    </androidx.appcompat.widget.Toolbar>
+
 
 </LinearLayout>
